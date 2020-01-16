@@ -28,3 +28,5 @@ else:
     elif((price<14000)):
         disc=(5/100)*price
 print("You get rupees ",disc," as discount")
+tot=price-disc
+print("Total amount to be paid is rupees",tot)
