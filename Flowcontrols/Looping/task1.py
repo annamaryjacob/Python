@@ -12,3 +12,4 @@ elif((no1%2==1)&(no2%2==1)):
 else:
     for i in range(no1,no2,2):
         print(i)
+#to display only even numbers

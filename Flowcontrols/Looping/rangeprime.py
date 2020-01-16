@@ -11,6 +11,7 @@ for i in range(no1,no2+1):
     if(res!=1):
         print(i)
 
+#programme to print all prime numbers from the 2 nos inputed
 
 
 
