@@ -1,14 +1,14 @@
 ans=0
-res=1
 no1=int(input("Enter first number"))
 no2=int(input("Enter second number"))
 for i in range(no1,no2+1):
+    flag=1
     for k in range(2,i):
         if(i%k)==0:
-            res=res+1
+            flag=0
             break
-        else:
-            res=0
-    if(res!=1):
+    if(flag==1):
         ans=ans+i
-print(ans)
+print("Sum of all prime numbers=",ans)
+
+#Sum of all prime numbers between the inputed amount
