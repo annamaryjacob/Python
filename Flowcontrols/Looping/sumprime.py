@@ -11,4 +11,5 @@ for i in range(no1,no2+1):
         ans=ans+i
 print("Sum of all prime numbers=",ans)
 
+
 #Sum of all prime numbers between the inputed amount

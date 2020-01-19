@@ -16,6 +16,8 @@ def mod(no1,no2):
 def pow(no1,no2):
     return(no1**no2)
 
+def
+
 
 
 
