@@ -1,12 +1,16 @@
 def thirdlar(no1,no2,no3):
     if((no1>no2)&(no1>no3)):
-        print(no1,"is the largest number")
+        ans=no1
+        return ans
     elif((no2>no1)&(no2>no3)):
-        print(no2,"is the largest number")
+        ans=no2
+        return ans
     elif((no3>no1)&(no3>no2)):
-        print(no3,"is the largest number")
+        ans=no3
+        return ans
     else:
-        print("All numbers are equal")
+        ans="All numbers are equal"
+        return ans
 
 def prime(x):
     for i in range(2, x):
@@ -16,9 +20,11 @@ def prime(x):
         else:
             res = 0
     if (res == 1):
-        print("Number is not a prime number")
+        ans="Number is not a prime number"
+        return ans
     else:
-        print("Number is a prime number")
+        ans="Number is a prime number"
+        return ans
 
 def sumprime(no1,no2):
     ans = 0
@@ -30,7 +36,8 @@ def sumprime(no1,no2):
                 break
         if (flag == 1):
             ans = ans + i
-    print("Sum of all prime numbers=", ans)
+    res=ans
+    return res
 
 def rev(n):
     i = 0
@@ -39,7 +46,8 @@ def rev(n):
         dig = (n % 10)
         rev = (rev * 10) + dig
         n = n // 10
-    print(rev)
+    ans=rev
+    return ans
 
 def listprime(no1,no2):
     res = 1
@@ -51,7 +59,8 @@ def listprime(no1,no2):
             else:
                 res = 0
         if (res != 1):
-            print(i)
+            ans=i
+            return ans
 
 def fact(i):
     n = 1
@@ -59,7 +68,9 @@ def fact(i):
     while (n <= i):
         res = res * n
         n = n + 1
-    print(i, "factorial is", res)
+    ans=res
+    return ans
+
 
 def isoddeven(no):
     if(no%2==0):
@@ -72,4 +83,36 @@ def posneg(no1):
         print("Number is a negative number")
     else:
         print("Number is a positive number")
+
+def fib(n):
+    n1 = 0
+    n2 = 1
+    y = 0
+    print(n1)
+    print(n2)
+    while (n >= y):
+        n3 = n1 + n2
+        n1 = n2
+        n2 = n3
+        print(n3)
+        y = y + 1
+
+def add(no1,no2):
+    return (no1+no2)
+
+def sub(no1,no2):
+    return (no2-no1)
+
+def mul(no1,no2):
+    return (no1*no2)
+
+def div(no1,no2):
+    return (no2/no1)
+
+def mod(no1,no2):
+    return (no2%no1)
+
+def pow(no1,no2):
+    return(no1**no2)
+
 
