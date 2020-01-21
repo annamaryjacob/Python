@@ -6,8 +6,8 @@ for i in range(0,limit):
     lst.append(val)
 for item in lst:
     if(item%2==0):
-        x=item+x
+        x=(item**2)+x
     else:
         pass
 print(lst)
-print("Sum of prime numbers = ",x)
+print("Sum of even squares",x)

@@ -11,3 +11,9 @@ for i in range(0,limit):
 print(lst)
 for item in (even):
     print(item)
+
+#for item in lst:
+    # if(item%2==0):
+    #     print(item)
+    # else:
+    #     pass
